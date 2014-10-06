@@ -1,0 +1,12 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/athletics/make-model"
+        }
+    ],
+    "require": {
+        "athletics/make-model": "dev-master"
+    },
+    "minimum-stability": "dev"
+}
