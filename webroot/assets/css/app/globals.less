@@ -1,6 +1,101 @@
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */	
+@athletics-color: blue;
 
 body {
-	color: red;
+	width: 100%;
+	//background-color: #fdf4f0;
+	font-family: "Helvetica", sans-serif;
+
+		table.page-wrapper {
+			//background-color: #EEE;
+			width: 100%;
+		}
+
+		table.outer-wrapper {
+			//padding: 5px;
+			//background-color: orange;
+			width: 600px;
+		}
+
+		table.header {
+			//background-color: green;
+			width: 100%;
+			text-align: center;
+			margin: 20px 0px;
+			td {
+				margin: 20px 0px;
+			}
+			tr.date {
+				color: #AAA;
+				font-size: 21px;
+			}
+			tr.logo {
+				.mark {
+				width: 120px;
+				background: url('../img/athletics_a.png') no-repeat center center;
+				background-size: contain;
+				height: 40px;
+				width: 40px;
+				margin-bottom: 20px;
+				// background-color: red;
+				}
+			}
+		}
+
+		table.story {
+			//background-color: #EEE;
+			margin: 0px 0px;
+			padding: 0px 0px 20px 0px;
+			border-bottom: 1px solid #EEE;
+			font-size: 16px;
+			line-height: 1.6em;
+			color: #000;
+			tr.to-athletics {
+				a {
+					color: #000;
+					text-decoration: none;
+					font-size: 24px;
+					//font-weight: bold;
+					&:hover {
+						color: @athletics-color;
+						text-decoration: underline;
+					}
+				}
+			}
+			tr.to-external {
+				a {
+					color: #333;
+					font-weight: bold;
+					font-size: 12px;
+					text-decoration: none;
+					line-height: 1em;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+			tr.img {
+				width: 100%;
+			}
+			tr.copy {
+				td {
+					margin-bottom: 20px;
+				}
+				a {
+					color: blue;
+					text-decoration: none;
+					&:hover {
+						color: #000;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+
+		table.footer {
+			//background-color: @athletics-color;
+			width: 100%;
+			text-align: right;
+		}
 }
+
+
