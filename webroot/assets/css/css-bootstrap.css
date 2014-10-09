@@ -1,102 +1,165 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 body {
   width: 100%;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Helvetica", Helvetica, sans-serif;
+  background-color: #f5f5eb;
+  border-top: 5px solid #000;
 }
-body table.page-wrapper {
+table.page-wrapper {
   width: 100%;
 }
-body table.outer-wrapper {
+table.outer-wrapper {
   width: 600px;
 }
-body table.header {
-  width: 100%;
+.header {
+  font-size: 18px;
   text-align: center;
   padding: 20px 0px;
-  border-bottom: 5px solid #000;
+  color: #999999;
 }
-body table.header td {
-  margin: 20px 0px;
-}
-body table.header tr.date {
-  color: #AAA;
-  font-size: 21px;
-}
-body table.header tr.logo .mark {
-  width: 120px;
+.header .mark {
   background: url('../img/athletics_a.png') no-repeat center center;
   background-size: contain;
   height: 40px;
   width: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  margin: 0 auto;
 }
-body table.header tr.header-img img {
-  margin-top: 20px;
+.header .date {
+  margin: 15px 0px 15px 0px;
+  color: #999999;
+}
+.header .header-img img {
+  margin-top: 10px 0px 0px 0px;
   width: 100%;
 }
-body table.story {
+.header p {
+  margin: 10px 0px 0px 0px;
+}
+.story {
   margin: 0px 0px;
-  padding: 20px 0px 20px 0px;
-  border-bottom: 1px solid #DDD;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1.6em;
+  padding: 20px 0px 20px 0px;
   color: #000;
 }
-body table.story tr.to-athletics h2 {
-  margin: 0px 0px 0px 0px;
+.story .slug {
+  color: #999999;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0px 0px 5px 0px;
+  display: block;
 }
-body table.story tr.to-athletics h2 a {
-  color: #000;
-  text-decoration: none;
-  font-size: 24px;
+.story .title h2 {
+  font-size: 18px;
+  margin: 0px 0px 10px 0px;
+  line-height: 1.4em;
 }
-body table.story tr.to-athletics h2 a:hover {
-  text-decoration: underline;
-}
-body table.story tr.img img {
-  margin: 10px 0px 0px 0px;
+.story .img img {
+  margin: 0px 0px 10px 0px;
+  line-height: 0em;
   width: 100%;
 }
-body table.story tr.content p {
+.story .content {
+  font-size: 14px;
+  line-height: 1.6em;
+}
+.story .content h3 {
+  font-size: 14px;
   margin: 10px 0px 0px 0px;
 }
-body table.story tr.content ul {
-  line-height: 1.8em;
+.story .content p {
+  margin: 0px 0px 10px 0px;
+}
+.story .content p:last-child {
+  margin-bottom: 0px;
+}
+.story .content ul {
   margin: 10px 0px 0px 0px;
-  font-size: 16px;
   list-style-type: circle;
 }
-body table.story tr.content ul li {
+.story .content ul li {
   margin: 10px 0px 0px 0px;
 }
-body table.story tr.content a {
-  color: blue;
+.story .content a {
+  color: #0000ff;
   text-decoration: none;
 }
-body table.story tr.content a:hover {
-  color: blue;
+.story .content a:hover {
+  color: #0000ff;
   text-decoration: underline;
 }
-body table.footer {
-  width: 100%;
-  text-align: right;
-  margin: 20px 0px;
-  line-height: 1.8em;
+.divide {
+  text-align: center;
 }
-body table.footer a {
-  color: #AAA;
+.divide ul {
+  display: inline;
+  margin: 0;
+  padding: 0px;
+}
+.divide ul li {
+  display: inline-block;
+  text-align: center;
   padding: 0px 5px;
+}
+.divide ul li .x {
+  height: 3px;
+  width: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+.divide ul li .x:after {
+  position: relative;
+  content: "\d7";
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+  top: -1px;
+  left: 0px;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  margin: 15px 0px;
+  font-size: 18px;
+}
+.footer ul {
+  padding: 0px;
+  margin: 15px 0px 0px 0px;
+  display: inline-block;
+}
+.footer ul.address {
+  display: block;
+  line-height: 1.4em;
+  color: #bbbbbb;
+  font-size: 14px;
+}
+.footer ul.address li {
+  display: block;
+}
+.footer ul li {
+  display: inline;
+}
+.footer a {
+  color: #999999;
+  padding: 0px 10px;
   text-decoration: none;
 }
-body table.footer a:hover {
+.footer a:hover {
   text-decoration: underline;
-  color: blue;
+  color: #0000ff;
 }
-body table.footer tr.unsubscribe {
-  font-size: 12px;
+.footer .unsubscribe a {
+  font-size: 11px;
 }
-body table.footer tr.copy-address {
-  color: #CCC;
-  font-size: 12px;
+@media only screen and (max-width: 480px) {
+  body {
+    width: 100% !important;
+  }
+  table.outer-wrapper {
+    width: 100% !important;
+    padding: 0px 20px !important;
+  }
 }
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
