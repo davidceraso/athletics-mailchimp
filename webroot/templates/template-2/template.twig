@@ -18,107 +18,152 @@
 									<td>
 
 
-										<table class="header" border="0" cellspacing="0" cellpadding="0">
-											<tbody>
-												<tr class="logo">
-													<td>
-														<table align="center" border="0" cellspacing="0" cellpadding="0">
-															<tbody>
-																<tr align="center">
-																	<td>
-																		<div class="mark"></div>
-																	</td>
-																</tr>
-																<tr align="center" class="date">
-																	<td>
-																		Thursday, October 9, 2014
-																	</td>
-																</tr>
-																<tr align="center" class="header-img">
-																	<td>
-																		<img src="assets/img/test-image.jpg">
-																	</td>
-																</tr>
-															</tbody>
-														</table>
-													</td>
-												</tr>
-											</tbody>
-										</table>
+										<div class="header">
+											<a href="http://athleticsnyc.com" target="_blank">
+												<div class="mark"></div>
+											</a>
+											<div class="date">
+												Thursday, October 9, 2014
+											</div>
+
+											<div class="header-img">
+												<img src="assets/img/home_multi4.gif">
+											</div>
+											<p>
+												You’re reading Athletics ETC, a roundup of digital ephemera, bits & bobs.
+											</p>
+										</div>
+
+										<div class="divide">
+
+												<ul>
+													<li>
+														<div class="x"></div>
+													</li>
+													<li>
+														<div class="x"></div>
+													</li>
+													<li>
+														<div class="x"></div>
+													</li>
+												</ul>
+
+											</div>
+
+
+									</td>
+								</tr>
+								<tr>
+									<td>
 
 
 										{% for story in stories %}
+											<div class="story" >
 
-											<table class="story" align="center" border="0" cellpadding="0" cellspacing="0">
-												<tbody>
+													{% if story.slug == null %}
 
-													<tr class="to-athletics">
-														<td>
-															<h2>
-																<a href="#">
-																	{{ story.title }}
-																</a>
-															</h2>
-														</td>
-													</tr>
+													{% else %}
+
+														<span class="slug">
+															{{ story.slug|raw }}
+														</span>
+
+													{% endif %}
+
+													<div class="title">
+														<h2>
+															{{ story.title|raw }}
+														</h2>
+													</div>
 
 													{% if story.img == null %}
 
 													{% else %}
 
-														<tr class="img">
-															<td>
-																<img src="{{ story.img }}">
-															</td>
-														</tr>
+														<div class="img">
+															<img src="{{ story.img }}">
+														</div>
 
 													{% endif %}
 
 													{% for content in story.content %}
 
-													<tr class="content">
-														<td>
+														<div class="content">
 															{{ content|raw }}
-														</td>
-													</tr>
+														</div>
 
 													{% endfor %}
 
-												</tbody>
-											</table>
+
+											</div>
+											<div class="divide">
+
+												<ul>
+													<li>
+														<div class="x"></div>
+													</li>
+													
+												</ul>
+
+											</div>
 
 										{% endfor %}
 
-										<table border="0" class="footer" cellspacing="0" cellpadding="0">
-											<tbody>
-												<tr align="center">
-													<td >
-														<a href="#" target="_blank">
-															Athletics
-														</a>
-														<a href="#" target="_blank">
-															Twitter
-														</a>
-														<a href="#" target="_blank">
-															Facebook
-														</a>
-													</td>
-												</tr>
-												<tr class="unsubscribe" align="center">
-													<td>
-														<a href="#" target="_blank">
+
+									</td>
+								</tr>
+								<tr>
+									<td>
+
+
+										<div class="footer">
+											<ul>
+												<li>
+													<a href="http://athleticsnyc.com" target="_blank">
+														Athletics
+													</a>
+												</li>
+												<li>
+													<a href="https://twitter.com/athleticsnyc" target="_blank">
+														Twitter
+													</a>
+												</li>
+												<li>
+													<a href="https://www.facebook.com/athleticsnyc" target="_blank">
+														Facebook
+													</a>
+												</li>
+												<li>
+													<a href="https://vimeo.com/athletics" target="_blank">
+														Vimeo
+													</a>
+												</li>
+											</ul>
+											
+											<div class="copy-address">
+												<ul class="address">
+													<li>
+														Theory/Practice
+													</li>
+													<li>
+														© 2014 Athletcs LLC
+													</li>
+													<li>
+														210 North 6th Street Brooklyn, NY 11211
+													</li>
+												</ul>
+											</div>
+											<div class="unsubscribe">
+												<ul>
+													<li>
+														<a href="*|UNSUB|*" target="_blank">
 															Unsubscribe
 														</a>
-													</td>
-												</tr>
-												<tr class="copy-address" align="center">
-													<td>
-														© 2014 Athletcs LLC. 210 North 6th Street Brooklyn, NY 11211
-													</td>
-												</tr>
-											</tbody>
-								
-										</table>
+													</li>
+												</ul>
+											</div>
+										</div>
+
 
 									</td>
 								</tr>
