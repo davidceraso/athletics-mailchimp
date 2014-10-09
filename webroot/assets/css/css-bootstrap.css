@@ -12,7 +12,8 @@ body table.outer-wrapper {
 body table.header {
   width: 100%;
   text-align: center;
-  margin: 20px 0px;
+  padding: 20px 0px;
+  border-bottom: 5px solid #000;
 }
 body table.header td {
   margin: 20px 0px;
@@ -29,49 +30,73 @@ body table.header tr.logo .mark {
   width: 40px;
   margin-bottom: 20px;
 }
+body table.header tr.header-img img {
+  margin-top: 20px;
+  width: 100%;
+}
 body table.story {
   margin: 0px 0px;
-  padding: 0px 0px 20px 0px;
-  border-bottom: 1px solid #EEE;
-  font-size: 16px;
+  padding: 20px 0px 20px 0px;
+  border-bottom: 1px solid #DDD;
+  font-size: 20px;
   line-height: 1.6em;
   color: #000;
 }
-body table.story tr.to-athletics a {
+body table.story tr.to-athletics h2 {
+  margin: 0px 0px 0px 0px;
+}
+body table.story tr.to-athletics h2 a {
   color: #000;
   text-decoration: none;
   font-size: 24px;
 }
-body table.story tr.to-athletics a:hover {
-  color: #0000ff;
+body table.story tr.to-athletics h2 a:hover {
   text-decoration: underline;
 }
-body table.story tr.to-external a {
-  color: #333;
-  font-weight: bold;
-  font-size: 12px;
-  text-decoration: none;
-  line-height: 1em;
-}
-body table.story tr.to-external a:hover {
-  text-decoration: underline;
-}
-body table.story tr.img {
+body table.story tr.img img {
+  margin: 10px 0px 0px 0px;
   width: 100%;
 }
-body table.story tr.copy td {
-  margin-bottom: 20px;
+body table.story tr.content p {
+  margin: 10px 0px 0px 0px;
 }
-body table.story tr.copy a {
+body table.story tr.content ul {
+  line-height: 1.8em;
+  margin: 10px 0px 0px 0px;
+  font-size: 16px;
+  list-style-type: circle;
+}
+body table.story tr.content ul li {
+  margin: 10px 0px 0px 0px;
+}
+body table.story tr.content a {
   color: blue;
   text-decoration: none;
 }
-body table.story tr.copy a:hover {
-  color: #000;
+body table.story tr.content a:hover {
+  color: blue;
   text-decoration: underline;
 }
 body table.footer {
   width: 100%;
   text-align: right;
+  margin: 20px 0px;
+  line-height: 1.8em;
+}
+body table.footer a {
+  color: #AAA;
+  padding: 0px 5px;
+  text-decoration: none;
+}
+body table.footer a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+body table.footer tr.unsubscribe {
+  font-size: 12px;
+}
+body table.footer tr.copy-address {
+  color: #CCC;
+  font-size: 12px;
 }
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
