@@ -1,5 +1,77 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 body {
-  color: red;
+  width: 100%;
+  font-family: "Helvetica", sans-serif;
+}
+body table.page-wrapper {
+  width: 100%;
+}
+body table.outer-wrapper {
+  width: 600px;
+}
+body table.header {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0px;
+}
+body table.header td {
+  margin: 20px 0px;
+}
+body table.header tr.date {
+  color: #AAA;
+  font-size: 21px;
+}
+body table.header tr.logo .mark {
+  width: 120px;
+  background: url('../img/athletics_a.png') no-repeat center center;
+  background-size: contain;
+  height: 40px;
+  width: 40px;
+  margin-bottom: 20px;
+}
+body table.story {
+  margin: 0px 0px;
+  padding: 0px 0px 20px 0px;
+  border-bottom: 1px solid #EEE;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: #000;
+}
+body table.story tr.to-athletics a {
+  color: #000;
+  text-decoration: none;
+  font-size: 24px;
+}
+body table.story tr.to-athletics a:hover {
+  color: #0000ff;
+  text-decoration: underline;
+}
+body table.story tr.to-external a {
+  color: #333;
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 1em;
+}
+body table.story tr.to-external a:hover {
+  text-decoration: underline;
+}
+body table.story tr.img {
+  width: 100%;
+}
+body table.story tr.copy td {
+  margin-bottom: 20px;
+}
+body table.story tr.copy a {
+  color: blue;
+  text-decoration: none;
+}
+body table.story tr.copy a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+body table.footer {
+  width: 100%;
+  text-align: right;
 }
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
