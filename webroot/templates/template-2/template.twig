@@ -16,28 +16,27 @@
 							<tbody>
 								<tr>
 									<td>
+
+
 										<table class="header" border="0" cellspacing="0" cellpadding="0">
 											<tbody>
 												<tr class="logo">
-													<td >
+													<td>
 														<table align="center" border="0" cellspacing="0" cellpadding="0">
 															<tbody>
-																<tr>
+																<tr align="center">
 																	<td>
 																		<div class="mark"></div>
 																	</td>
 																</tr>
-															</tbody>
-														</table>
-													</td>
-												</tr>
-												<tr class="date" align="center">
-													<td>
-														<table cellpadding="0" cellspacing="0" border="0">
-															<tbody>
-																<tr class="date">
+																<tr align="center" class="date">
 																	<td>
-																		Tuesday, October 7, 2014
+																		Thursday, October 9, 2014
+																	</td>
+																</tr>
+																<tr align="center" class="header-img">
+																	<td>
+																		<img src="assets/img/test-image.jpg">
 																	</td>
 																</tr>
 															</tbody>
@@ -47,105 +46,78 @@
 											</tbody>
 										</table>
 
+
 										{% for story in stories %}
 
-											<table class="story" border="0" align="center" cellpadding="0" cellspacing="0">
+											<table class="story" align="center" border="0" cellpadding="0" cellspacing="0">
 												<tbody>
-													<tr>
-														<td align="left" valign="top">
-															<table width="100%" border="0" cellspacing="0" cellpadding="0">
-																<tbody>
-																	<tr>
-																		<td>
-																			<table width="100%" border="0" cellspacing="0" cellpadding="0">
-																				<tbody>
 
-																					<tr class="to-athletics">
-																						<td>
-																							<a href="#">
-																								{{ story.title }}
-																							</a>
-																						</td>
-																					</tr>
-
-																					<tr class="img">
-																						<img src="{{ story.img }}">
-																					</tr>
-
-																					{% for paragraph in story.copy %}
-
-																						<tr class="copy">
-																							<td>
-																								{{ paragraph }}
-																							</td>
-																						</tr>
-
-																					{% endfor %}
-
-																					{% for link in story.external %}
-
-																						<tr class="to-external">
-																							<td>
-																								<a href="http://{{ link }}">
-																									{{ link }}
-																								</a>
-																							</td>
-																						</tr>
-
-																					{% endfor %}
-
-																				</tbody>
-																			</table>
-																		</td>
-																	</tr>
-																</tbody>
-															</table>
+													<tr class="to-athletics">
+														<td>
+															<h2>
+																<a href="#">
+																	{{ story.title }}
+																</a>
+															</h2>
 														</td>
 													</tr>
+
+													{% if story.img == null %}
+
+													{% else %}
+
+														<tr class="img">
+															<td>
+																<img src="{{ story.img }}">
+															</td>
+														</tr>
+
+													{% endif %}
+
+													{% for content in story.content %}
+
+													<tr class="content">
+														<td>
+															{{ content|raw }}
+														</td>
+													</tr>
+
+													{% endfor %}
+
 												</tbody>
 											</table>
 
 										{% endfor %}
 
-										<table class="footer" border="0" cellspacing="0" cellpadding="0">
+										<table border="0" class="footer" cellspacing="0" cellpadding="0">
 											<tbody>
-												<tr>
+												<tr align="center">
+													<td >
+														<a href="#" target="_blank">
+															Athletics
+														</a>
+														<a href="#" target="_blank">
+															Twitter
+														</a>
+														<a href="#" target="_blank">
+															Facebook
+														</a>
+													</td>
+												</tr>
+												<tr class="unsubscribe" align="center">
 													<td>
-														<table border="0" cellspacing="0" cellpadding="0">
-															<tbody>
-																<tr>
-																	<td>
-
-																		<a href="#" target="_blank">
-																			Athletics
-																		</a>
-
-																		<a href="#" target="_blank">
-																			Twitter
-																		</a>
-
-																		<a href="#" target="_blank">
-																			Facebook
-																		</a>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<a href="#" target="_blank">
-																			Unsubscribe
-																		</a>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		© 2014 Athletcs LLC. 210 North 6th Street Brooklyn, NY 11211
-																	</td>
-																</tr>
-															</tbody>
-														</table>
+														<a href="#" target="_blank">
+															Unsubscribe
+														</a>
+													</td>
+												</tr>
+												<tr class="copy-address" align="center">
+													<td>
+														© 2014 Athletcs LLC. 210 North 6th Street Brooklyn, NY 11211
 													</td>
 												</tr>
 											</tbody>
+								
 										</table>
 
 									</td>
