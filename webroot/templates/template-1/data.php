@@ -26,7 +26,7 @@ $stories = array(
 			</p>',
 			'<ul>
 				<li>
-					The fine folks at <a href="http://www.marketplace.org/shows/marketplace-weekend" target="_blank">Marketplace Weekend</a> included a segment on Athletics partner <a href="https://twitter.com/jamesellisnyc" target="_blank">James Ellis</a>’ 19-yrs-old, just-moved-to-NYC story. Cleverly titled, <a href=http://www.marketplace.org/topics/your-money/appetite-vocation" target="_blank">Appetite for Vocation</a>.
+					The fine folks at <a href="http://www.marketplace.org/shows/marketplace-weekend" target="_blank">Marketplace Weekend</a> included a segment on Athletics partner <a href="https://twitter.com/jamesellisnyc" target="_blank">James Ellis</a>’ 19-yrs-old, just-moved-to-NYC story. Cleverly titled, <a href="http://www.marketplace.org/topics/your-money/appetite-vocation" target="_blank">Appetite for Vocation</a>.
 				</li>
 				<li>
 					Don’t miss <a href="http://songexploder.net/" target="_blank">Song Exploder</a>, a (relatively) new podcast from <a href="https://twitter.com/HrishiHirway" target="_blank">Hrishikesh Hirway</a>. <a href="http://songexploder.net/episode-7-jeff-beal/" target="_blank">Episode 7</a> is a great place to start.
