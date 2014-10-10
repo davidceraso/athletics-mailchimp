@@ -1,0 +1,139 @@
+body {
+	margin: 0px;
+}
+
+form {
+
+	width: 600px;
+	margin: 0 auto;
+	font-family: 'Helvetica', Arial, sans-serif;
+	font-size: 18px;
+
+	.mc-field-group {
+		&:active, &:focus, &:hover {
+			label {
+				color: blue;
+			}
+			input {
+					outline: -webkit-focus-ring-color auto 0px;
+					border: 2px solid blue;
+			}
+		}
+	}
+
+	.mark {
+		font-family: "Century Gothic", 'Helvetica', sans-serif;
+		background-size: contain;
+		height: 40px;
+		width: 30px;
+		text-align: center;
+		margin-bottom: @outer-margins;
+		margin: 0 auto;
+		color: #000;
+		font-size: 40px;
+		font-weight: bold;
+		border-bottom: 5px solid #000;
+		padding-bottom: 5px;
+		a {
+			color: #000;
+			text-decoration: none;
+		}
+	}
+	h2 {
+		font-size: 18px;
+		text-align: center;
+		margin: 10px 0px 0px 0px;
+		color: #000;
+	}
+	label {
+		display: block;
+		width: auto;
+		font-weight: normal;
+		color: @dark-gray;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 11px;
+		margin: 0px 0px 0px 0px;
+		display: block;
+	}
+	input {
+		display: block;
+		margin: 5px 0px 30px 0px;
+		padding: 10px;
+		background: #FFF;
+		width: 100%;
+		border: 2px solid @dark-gray;
+		border-radius: 3px;
+		-webkit-appearance: none;
+		font-size: 18px;
+		width: 100%; 
+		box-sizing: border-box;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing: border-box;
+		&:focus {
+			outline: -webkit-focus-ring-color auto 0px;
+			border: 2px solid blue;
+		}
+	}
+	.button {
+		color: #FFF;
+		display: inline-block;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 40px;
+		letter-spacing: .1em;
+		width: auto;
+		height: 40px;
+		margin: 10px 5px 10px 0;
+		padding: 0 20px;
+		text-decoration: none;
+		text-align: center;
+		cursor: pointer;
+		border: 0px;
+		background-color: @dark-gray;
+		vertical-align: top;
+		text-transform: uppercase;
+		&:hover {
+			background-color: blue;
+		}
+		&:focus {
+			outline: -webkit-focus-ring-color auto 0px;
+			border: 0px solid blue;
+		}
+	}
+	.indicates-required {
+		font-size: 12px;
+	}
+	.divide {
+		text-align: center;
+		ul {
+			display: inline;
+			margin: 0;
+			padding: 0px;
+			li {
+				display: inline-block;
+				text-align: center;
+				padding: 0px 5px;
+				.x {
+				    height: 3px;
+				    width: 3px;
+				    border-radius: 3px;
+				    text-align: center;
+				}
+				.x:after {
+				    position: relative;
+				    content:"\d7";
+				    font-size: 18px;
+				    color: @light-gray;
+				    font-weight: bold;
+				    top: -1px;
+				    left: 0px
+				}
+			}
+		}
+	}
+}
+
+
+
+
