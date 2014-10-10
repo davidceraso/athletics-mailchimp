@@ -2,6 +2,7 @@
 body {
   width: 100%;
   font-family: "Helvetica", Helvetica, sans-serif;
+  background-color: #FFF;
   border-top: 5px solid #000;
 }
 table.page-wrapper {
@@ -17,12 +18,22 @@ table.outer-wrapper {
   color: #999999;
 }
 .header .mark {
-  background: url('../img/athletics_a.png') no-repeat center center;
+  font-family: "Century Gothic";
   background-size: contain;
   height: 40px;
-  width: 40px;
+  width: 30px;
+  text-align: center;
   margin-bottom: 30px;
   margin: 0 auto;
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
+  border-bottom: 5px solid #000;
+  padding-bottom: 5px;
+}
+.header .mark a {
+  color: #000;
+  text-decoration: none;
 }
 .header .date {
   font-size: 14px;
@@ -39,7 +50,7 @@ table.outer-wrapper {
 }
 .header p {
   font-size: 18px;
-  color: #000;
+  color: #999999;
   margin: 0px 0px 0px 0px;
 }
 .story {
@@ -114,19 +125,11 @@ table.outer-wrapper {
   padding: 0px 5px;
 }
 .divide ul li .x {
-  height: 3px;
-  width: 3px;
-  border-radius: 3px;
-  text-align: center;
-}
-.divide ul li .x:after {
-  position: relative;
-  content: "\d7";
   font-size: 18px;
+  width: 18px;
+  height: 18px;
+  position: relative;
   color: #bbbbbb;
-  font-weight: bold;
-  top: -1px;
-  left: 0px;
 }
 .footer {
   width: 100%;
@@ -153,7 +156,7 @@ table.outer-wrapper {
 }
 .footer a {
   color: #999999;
-  padding: 0px 10px;
+  padding: 0px 8px;
   text-decoration: none;
 }
 .footer a:hover {
@@ -167,9 +170,145 @@ table.outer-wrapper {
   body {
     width: 100% !important;
   }
+  form {
+    width: auto!important;
+    padding: 0px 20px;
+  }
   table.outer-wrapper {
     width: 100% !important;
     padding: 0px 20px !important;
   }
+  .footer {
+    font-size: 14px;
+  }
+}
+body {
+  margin: 0px;
+}
+form {
+  width: 600px;
+  margin: 0 auto;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 18px;
+}
+form .mc-field-group:active label,
+form .mc-field-group:focus label,
+form .mc-field-group:hover label {
+  color: blue;
+}
+form .mc-field-group:active input,
+form .mc-field-group:focus input,
+form .mc-field-group:hover input {
+  outline: -webkit-focus-ring-color auto 0px;
+  border: 2px solid blue;
+}
+form .mark {
+  font-family: "Century Gothic", 'Helvetica', sans-serif;
+  background-size: contain;
+  height: 40px;
+  width: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin: 0 auto;
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
+  border-bottom: 5px solid #000;
+  padding-bottom: 5px;
+}
+form .mark a {
+  color: #000;
+  text-decoration: none;
+}
+form h2 {
+  font-size: 18px;
+  text-align: center;
+  margin: 10px 0px 0px 0px;
+  color: #000;
+}
+form label {
+  width: auto;
+  font-weight: normal;
+  color: #999999;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11px;
+  margin: 0px 0px 0px 0px;
+  display: block;
+}
+form input {
+  display: block;
+  margin: 5px 0px 30px 0px;
+  padding: 10px;
+  background: #FFF;
+  border: 2px solid #999999;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  font-size: 18px;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+form input:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+  border: 2px solid blue;
+}
+form .button {
+  color: #FFF;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 40px;
+  letter-spacing: .1em;
+  width: auto;
+  height: 40px;
+  margin: 10px 5px 10px 0;
+  padding: 0 20px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border: 0px;
+  background-color: #999999;
+  vertical-align: top;
+  text-transform: uppercase;
+}
+form .button:hover {
+  background-color: blue;
+}
+form .button:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+  border: 0px solid blue;
+}
+form .indicates-required {
+  font-size: 12px;
+}
+form .divide {
+  text-align: center;
+}
+form .divide ul {
+  display: inline;
+  margin: 0;
+  padding: 0px;
+}
+form .divide ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 0px 5px;
+}
+form .divide ul li .x {
+  height: 3px;
+  width: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+form .divide ul li .x:after {
+  position: relative;
+  content: "\d7";
+  font-size: 18px;
+  color: #bbbbbb;
+  font-weight: bold;
+  top: -1px;
+  left: 0px;
 }
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
